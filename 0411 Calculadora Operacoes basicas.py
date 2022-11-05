@@ -26,7 +26,3 @@ if op == "*":
 if op == "/":
     res = n1/n2
     print(res)
-
-if res = ".0"
-    res = int
-    print(res)
