@@ -31,7 +31,7 @@ while escolha_do_jogador != numero:
     i += 1
 
     if escolha_do_jogador == numero:
-        print(f"Parabéns, você acertou! \n Número de tentativas: [{i}]")
+        print(f"Parabéns, você acertou!\n O número correto era: {numero} \n Número de tentativas: [{i}]")
 
     else:
 
