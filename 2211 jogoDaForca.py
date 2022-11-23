@@ -37,15 +37,15 @@ while True:
 
     escolhaLetra = str(input("\nQual letra tem nesta palavra? ")).upper()
 
-    if letra not in escolhaLetra:
-        erros += 1
-        print(f"Você errou!\nErros = {erros}")
-
-    for letra in palavraEscolhida:
+  for letra in palavraEscolhida:
         if letra in escolhaLetra:
             print(letra, end=" ")
         else:
             print("_", end=" ")
+
+    if escolhaLetra not in palavraEscolhida:
+        erros += 1
+        print(f"Você errou!\nErros = {erros}")
     
     
     
