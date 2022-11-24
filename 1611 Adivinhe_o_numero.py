@@ -15,6 +15,12 @@ def game():
     while escolha_do_jogador != numero:
 
         escolha_do_jogador = int(input("Qual o número que você escolheu? "))
+        while True:
+            try:
+                escolha_do_jogador = int(input("Qual o número que você escolheu? "))
+                break
+            except ValueError:
+                print('Digite um valor inteiro')
         while escolha_do_jogador < 0 or escolha_do_jogador > 10:
             print("RESPOSTA INVÁLIDA!")
             escolha_do_jogador = int(input("Qual o número que você escolheu? "))
