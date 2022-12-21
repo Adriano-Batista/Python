@@ -1,1 +1,5 @@
+from Lib.functions import coder, headers
 
+withoutCodeWord = str(input('Digite sua mensagem: '))
+coder.morseCoder(withoutCodeWord)
+headers.header(withoutCodeWord)
